@@ -5,13 +5,14 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
     <changeSet id="1" author="Mikhail">
-        <createTable tableName="Users">
-            <column name="id" type="int" autoIncrement="true">
+        <createTable tableName="USERS">
+            <column name="ID" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="name" type="varchar" defaultValue="Отсутствует"/>
-            <column name="age" type="int" defaultValue="0"/>
+            <column name="NAME" type="varchar" defaultValue="Отсутствует"/>
+            <column name="AGE" type="int" defaultValue="0"/>
         </createTable>
     </changeSet>
 

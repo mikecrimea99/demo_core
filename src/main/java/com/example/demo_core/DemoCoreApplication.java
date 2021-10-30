@@ -13,8 +13,4 @@ public class DemoCoreApplication {
 		SpringApplication.run(DemoCoreApplication.class, args);
 	}
 
-	@Bean
-	public RestTemplate restTemplate(){
-		return new RestTemplateBuilder().build();
-	}
 }
