@@ -16,4 +16,16 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="2" author="Mikhail">
+        <createTable tableName="CARS">
+            <column name="ID" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="BRAND" type="varchar" defaultValue="Гаражный самосбор"/>
+            <column name="USER_ID" type="int">
+                <constraints foreignKeyName="USER_ID_TO_CAR_ID" references="USERS(ID)"/>
+            </column>
+        </createTable>
+    </changeSet>
+
 </databaseChangeLog>
