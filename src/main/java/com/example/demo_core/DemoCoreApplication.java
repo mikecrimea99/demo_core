@@ -9,8 +9,8 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class DemoCoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoCoreApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DemoCoreApplication.class, args);
+    }
 
 }
